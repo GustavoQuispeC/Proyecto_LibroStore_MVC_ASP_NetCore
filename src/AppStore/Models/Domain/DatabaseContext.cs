@@ -8,11 +8,16 @@ using Microsoft.EntityFrameworkCore;
 namespace AppStore.Models.Domain
 {
     public class DatabaseContext : IdentityDbContext<ApplicationUser>
-
     {
+        //! conexion a la BD
+        public DatabaseContext(DbContextOptions<DatabaseContext>options): base(options)
+        {
+
+        }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            //!configuracion para crear la relacion de many to many
             builder.Entity<Libro>()
             .HasMany(x=>x.CategoriaRelationList)
             .WithMany(y=>y.LibroRelationList)

@@ -1,7 +1,19 @@
+using AppStore.Models.Domain;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//! Add the DatabaseContext to the services container and configure it to use the Sqlite database.
+builder.Services.AddDbContext<DatabaseContext>(opt =>
+{
+    opt.LogTo(Console.WriteLine, new[]{
+        DbLoggerCategory.Database.Command.Name},
+        LogLevel.Information).EnableSensitiveDataLogging();
+        opt.UseSqlite(builder.Configuration.GetConnectionString("SqliteDataBase"));
+});
 
 var app = builder.Build();
 
