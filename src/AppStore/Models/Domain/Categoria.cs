@@ -15,4 +15,4 @@ namespace AppStore.Models.Domain
         public virtual ICollection<Libro>?LibroRelationList{get; set;}
         public virtual ICollection<LibroCategoria>?LibroCategoriaRelationList{get; set;}
     }
-}
+} 
