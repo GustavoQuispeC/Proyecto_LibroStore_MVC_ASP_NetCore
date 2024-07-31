@@ -1,4 +1,5 @@
 using AppStore.Models.Domain;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,10 @@ builder.Services.AddDbContext<DatabaseContext>(opt =>
         LogLevel.Information).EnableSensitiveDataLogging();
         opt.UseSqlite(builder.Configuration.GetConnectionString("SqliteDataBase"));
 });
+//! Add the Identity services to the services container.
+builder.Services.AddIdentity<ApplicationUser,IdentityRole>()
+.AddEntityFrameworkStores<DatabaseContext>()
+.AddDefaultTokenProviders();
 
 var app = builder.Build();
 
@@ -29,11 +34,33 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+//! Add the authentication and authorization middleware to the request pipeline.
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+//! preparando insercion de data por default
+using (var ambiente = app.Services.CreateScope())
+{
+    var services = ambiente.ServiceProvider;
+    try{
+        var context = services.GetRequiredService<DatabaseContext>();
+        var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+        var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+    
+    await context.Database.MigrateAsync();
+    await LoadDatabase.InsertarData(context,userManager,roleManager);
 
+
+    }
+    catch(Exception e)
+    {
+        //! MOstrando error en console
+        var logging = services.GetRequiredService<ILogger<Program>>();
+        logging.LogError(e, "Error en la migracion de datos");
+    }
+   
+}    
 app.Run();

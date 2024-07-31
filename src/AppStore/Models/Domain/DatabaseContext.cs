@@ -36,8 +36,8 @@ namespace AppStore.Models.Domain
                 }
             );
         }
-        public DbSet<Categoria>Categorias {get; set;}
-        public DbSet<Libro>Libros{get; set;}
-        public DbSet<LibroCategoria>LibroCategorias{get; set;}
+        public DbSet<Categoria>?Categorias {get; set;}
+        public DbSet<Libro>?Libros{get; set;}
+        public DbSet<LibroCategoria>?LibroCategorias{get; set;}
     }
 }

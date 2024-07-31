@@ -22,25 +22,26 @@ namespace AppStore.Models.Domain
                     UserName ="gustavo.quispe"
                 };
                 //! password
-                await usuarioManager.CreateAsync(usuario, "123456");
+                await usuarioManager.CreateAsync(usuario, "05Enero1986*");
                 //! role
                 await usuarioManager.AddToRoleAsync(usuario,"ADMIN");
             }
 
             //! agregando categoria por default siempre que no exista
             if(!context.Categorias!.Any()){
-                context.Categorias!.AddRange(
+               await context.Categorias!.AddRangeAsync(
                     new Categoria{Nombre = "Drama"},
                     new Categoria{Nombre = "Coemdia"},
                     new Categoria{Nombre = "Accion"},
                     new Categoria{Nombre = "Terror"},
                     new Categoria{Nombre = "Aventura"}
                 );
+                await context.SaveChangesAsync();
             }
 
             //! agregando Libros por default siempre que no exista
             if(!context.Libros!.Any()){
-                context.Libros!.AddRange(
+                await context.Libros!.AddRangeAsync(
                     new Libro{
                         Titulo = "El Quijote de la mancha",
                         CreateDate="12/01/2024",
@@ -54,16 +55,18 @@ namespace AppStore.Models.Domain
                         Autor = "Juan de la Cruz"
                     }
                 );
+                await context.SaveChangesAsync();
             }
             //! agregando LibroCategorias por default siempre que no exista
             if(!context.LibroCategorias!.Any()){
-                context.LibroCategorias!.AddRange(
+                await context.LibroCategorias!.AddRangeAsync(
                     new LibroCategoria{CategoriaId = 1, LibroId = 1},
                     new LibroCategoria{CategoriaId = 2, LibroId = 2}
 
                 );
+                await context.SaveChangesAsync();
             }
-            context.SaveChanges();
+            
 
 
         }
