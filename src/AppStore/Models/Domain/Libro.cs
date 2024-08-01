@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AppStore.Models.Domain
 {
@@ -18,6 +15,11 @@ namespace AppStore.Models.Domain
         public string? Autor { get; set; }
         public virtual ICollection<Categoria>?CategoriaRelationList{get; set;}
         public virtual ICollection<LibroCategoria>?LibroCategoriaRelationList{get; set;}
+        
+        [NotMapped] //!no se mapeara en las tablas de BD
+        public List<int>? Categorias { get; set; }
 
+        [NotMapped]
+        public string? CategoriasNames { get; set; }
     }
 }
