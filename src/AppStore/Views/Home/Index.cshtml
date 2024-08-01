@@ -13,9 +13,9 @@
 
         <section class="movies">
           @foreach(var libro in Model.LibroList!){
-             <div class="movie-card"onclick="window.location.href='/movie-detail.html'" >
+             <div class="movie-card"onclick="window.location.href='/Home/LibroDetail?libroId=@libro.Id'" >
             <div class="movie-image">
-            <img src="Upload/@libro.Imagen" width="200" height="300">
+            <img src="/Uploads/@libro.Imagen" width="200" height="300">
             </div>
             <div class="movie-info">
                 <h4>@libro.Titulo</h4>
@@ -24,6 +24,7 @@
                 
             </div>
            </div>
+           <br>
           }
 
           

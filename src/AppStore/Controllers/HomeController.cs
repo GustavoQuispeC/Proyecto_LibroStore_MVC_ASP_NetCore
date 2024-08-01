@@ -27,5 +27,15 @@ namespace AppStore.Controllers
             return View(libroListVm);
         }
 
+        public IActionResult LibroDetail(int libroId)
+        {
+            var libro = _libroService.GetById(libroId);
+            return View(libro);
+        }
+        public IActionResult About()
+        {
+            return View();
+        }
+
     }
 }
