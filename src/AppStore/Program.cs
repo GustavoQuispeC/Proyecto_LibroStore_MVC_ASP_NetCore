@@ -1,4 +1,6 @@
 using AppStore.Models.Domain;
+using AppStore.Repositories.Abstract;
+using AppStore.Repositories.Implementation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//! creando objeto desde la interfaz y servicio
+builder.Services.AddScoped<ILibroService, LibroService>();
 
 //! Add the DatabaseContext to the services container and configure it to use the Sqlite database.
 builder.Services.AddDbContext<DatabaseContext>(opt =>
