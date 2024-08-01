@@ -99,7 +99,7 @@ namespace AppStore.Repositories.Implementation
                 string categoriaNombres = string.Join(",", categorias); 
                 libro.CategoriasNames = categoriaNombres;
             }
-            data.LIbroList= list.AsQueryable();
+            data.LibroList= list.AsQueryable();
 
             return data;
         }

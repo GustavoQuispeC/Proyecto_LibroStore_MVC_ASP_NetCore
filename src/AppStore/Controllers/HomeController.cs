@@ -23,8 +23,8 @@ namespace AppStore.Controllers
         //! Método que se ejecuta al cargar la vista
         public IActionResult Index(string term ="", int currentPage = 1)
         {
-            var libros = _libroService.List(term, true, currentPage);
-            return View(libros);
+            var libroListVm = _libroService.List(term, true, currentPage);
+            return View(libroListVm);
         }
 
     }
