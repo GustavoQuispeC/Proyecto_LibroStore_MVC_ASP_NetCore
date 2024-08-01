@@ -9,10 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//! creando objeto desde la interfaz y servicio
+//! agregando servicios de repositorios
 builder.Services.AddScoped<ILibroService, LibroService>();
 
-//! Add the DatabaseContext to the services container and configure it to use the Sqlite database.
+//! agregando conexion a la base de datos usando sqlite
 builder.Services.AddDbContext<DatabaseContext>(opt =>
 {
     opt.LogTo(Console.WriteLine, new[]{
@@ -20,7 +20,7 @@ builder.Services.AddDbContext<DatabaseContext>(opt =>
         LogLevel.Information).EnableSensitiveDataLogging();
         opt.UseSqlite(builder.Configuration.GetConnectionString("SqliteDataBase"));
 });
-//! Add the Identity services to the services container.
+//! agregando servicios de autenticacion y autorizacion
 builder.Services.AddIdentity<ApplicationUser,IdentityRole>()
 .AddEntityFrameworkStores<DatabaseContext>()
 .AddDefaultTokenProviders();

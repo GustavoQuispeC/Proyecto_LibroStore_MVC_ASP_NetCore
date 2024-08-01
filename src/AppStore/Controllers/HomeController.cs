@@ -14,11 +14,13 @@ namespace AppStore.Controllers
     {
         private readonly ILibroService _libroService;
 
+        //! Inyectando el servicio de libros
         public HomeController(ILibroService libroService)
         {
             _libroService = libroService;
         }
 
+        //! Método que se ejecuta al cargar la vista
         public IActionResult Index(string term ="", int currentPage = 1)
         {
             var libros = _libroService.List(term, true, currentPage);

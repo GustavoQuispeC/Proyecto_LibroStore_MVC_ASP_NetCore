@@ -9,10 +9,12 @@ namespace AppStore.Repositories.Implementation
     public class LibroService : ILibroService
     {
         private readonly DatabaseContext ctx;
+        //! Inyectando el contexto de la base de datos
         public LibroService(DatabaseContext ctxParameter)
         {
             ctx = ctxParameter;
         }
+        //! Implementando metodo agregar
         public bool Add(Libro libro)
         {
             try
@@ -37,7 +39,7 @@ namespace AppStore.Repositories.Implementation
                 return false;
             }
         }
-
+        //! implementando metodo borrar
         public bool Delete(int id)
         {
             try
@@ -58,11 +60,13 @@ namespace AppStore.Repositories.Implementation
                 return false;
             }
         }
+        //! implementando metodo obtener por id
         public Libro GetById(int id)
         {
             return ctx.Libros!.Find(id)!;
 
         }
+        //! implementando metodo listar
         public LibroListVm List(string term="", bool paging=false, int currentPage =0)
         {
             var data = new LibroListVm();
@@ -99,7 +103,7 @@ namespace AppStore.Repositories.Implementation
 
             return data;
         }
-
+        //! implementando metodo actualizar
         public bool Update(Libro libro)
         {
             try
@@ -125,6 +129,7 @@ namespace AppStore.Repositories.Implementation
                 return false;
             }
         }
+        //! implementando metodo obtener categorias por libro id
         public List<int>GetCategoriaByLibroId(int LibroId)
         {
             return ctx.LibroCategorias!.Where(a=>a.LibroId == LibroId).Select(a=>a.CategoriaId).ToList();
