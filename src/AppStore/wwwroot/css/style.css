@@ -107,6 +107,7 @@ body {
 
 .movies {
   display: flex;
+  padding: 10px;;
   justify-content: left;
   flex-wrap: wrap;
   /* background-color: red; */
