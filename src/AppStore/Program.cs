@@ -9,8 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//! agregando servicios de repositorios
+//! agregando servicios de libros
 builder.Services.AddScoped<ILibroService, LibroService>();
+//! agregando servicios de autenticacion
+builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
+
 
 //! agregando conexion a la base de datos usando sqlite
 builder.Services.AddDbContext<DatabaseContext>(opt =>

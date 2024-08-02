@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZU00yyuY3dOvhc0Gfj9mPkM05Y3gwsAH+7s4MQlxK+Q=",
+  "Hash": "8Dsagjavruz5zwRCIPetDE7iB15c43JW92T7fFSLOMY=",
   "Source": "AppStore",
   "BasePath": "_content/AppStore",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\css\\form.css",
+      "Identity": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\css\\forms.css",
       "SourceId": "AppStore",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\",
       "BasePath": "_content/AppStore",
-      "RelativePath": "css/form.css",
+      "RelativePath": "css/forms.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,7 +33,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\form.css"
+      "OriginalItemSpec": "wwwroot\\css\\forms.css"
     },
     {
       "Identity": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\css\\style.css",

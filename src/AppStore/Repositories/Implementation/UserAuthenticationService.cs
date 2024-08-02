@@ -22,7 +22,7 @@ namespace AppStore.Repositories.Implementation
         public async Task<Status>LoginAsync(LoginModel login)
         {
             var status = new Status();
-            var user = await userManager.FindByNameAsync(login.UserName!);
+            var user = await userManager.FindByNameAsync(login.Username!);
             if(user is null)
             {
                 status.StatusCode=0;

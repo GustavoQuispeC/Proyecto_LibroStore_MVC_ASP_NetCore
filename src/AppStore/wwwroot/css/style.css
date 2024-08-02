@@ -84,18 +84,18 @@ body {
   width: 100%;
 }
 
-.search-bar{
-  width: 100%; 
+.search-bar {
+  width: 100%;
   padding: 0 2%;
 }
-.search-bar input[type="text"]{
+.search-bar input[type="text"] {
   padding: 0.7rem;
   border: 1px solid lightgray;
   border-radius: 0.25rem;
   font-size: 1rem;
   width: 25%;
 }
-.search-bar button{
+.search-bar button {
   border-radius: 0.25rem;
   font-size: 1rem;
   padding: 0.7rem 0.9rem;
@@ -107,7 +107,7 @@ body {
 
 .movies {
   display: flex;
-  padding: 10px;;
+  padding: 10px;
   justify-content: left;
   flex-wrap: wrap;
   /* background-color: red; */
@@ -121,7 +121,7 @@ body {
   flex-direction: column;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
-    cursor: pointer;
+  cursor: pointer;
   /* background-color: yellow; */
 }
 
@@ -135,7 +135,7 @@ body {
 }
 
 /* Pagination links */
-.pagination{
+.pagination {
   display: flex;
   justify-content: right;
 }
@@ -143,7 +143,7 @@ body {
   color: black;
   padding: 8px 16px;
   text-decoration: none;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
 
 /* Style the active/current link */
@@ -153,8 +153,9 @@ body {
 }
 
 /* Add a grey background color on mouse-over */
-.pagination a:hover:not(.active) {background-color: #ddd;}
-
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
 
 footer {
   width: 100%;
@@ -234,7 +235,6 @@ footer {
   padding: 0 1.2rem;
 }
 
-
 /* Media queries */
 
 @media (max-width: 920px) {
@@ -250,7 +250,7 @@ footer {
 
   .movie-detail {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
   }
   .detail-container {
     padding: 0 !important;
