@@ -22,14 +22,15 @@ namespace AppStore.Controllers
         public IActionResult Add(Libro libro)
         {
             libro.CategoriaList =  _categoriaService.List()
-            .Select(x=> new SelectListItem(Text = x.Nombre, Value = x.Id.ToString()));
+            .Select(x => new SelectListItem { Text = x.Nombre, Value = x.Id.ToString()});
+
             if(!ModelState.IsValid)
             {
                 return View(libro);
             }
-            if(libro.ImagenFile != null)
+            if(libro.ImageFile != null)
             {
-            var resultado = _fileService.SaveImage(libro.ImagenFile);
+            var resultado = _fileService.SaveImage(libro.ImageFile);
                 if(resultado.Item1==0)
                 {
                     TempData["msg"] = "la imagen no pudo guardarse exitosamente";
@@ -54,11 +55,18 @@ namespace AppStore.Controllers
 //! controles de navegacion
         public IActionResult Add()
         {
-            return View();
+            var libro = new Libro();
+            libro.CategoriaList = _categoriaService.List().Select(a => new SelectListItem
+            {
+                Text = a.Nombre,
+                Value = a.Id.ToString()
+            });
+            return View(libro);
         }
 
         public IActionResult Edit(int id)
         {
+           
             return View();
         }
 

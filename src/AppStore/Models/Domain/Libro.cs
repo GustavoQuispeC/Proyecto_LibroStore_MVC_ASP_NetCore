@@ -25,11 +25,11 @@ namespace AppStore.Models.Domain
         public string? CategoriasNames { get; set; }
 
         [NotMapped]
-        public IFormFile? ImagenFile { get; set; }
+        public IFormFile? ImageFile { get; set; }
 
 
          [NotMapped]
-        public IEnumerable< MultiSelectList>?CategoriaList { get; set; }
+        public IEnumerable< SelectListItem>?CategoriaList { get; set; }
 
     }
 }
