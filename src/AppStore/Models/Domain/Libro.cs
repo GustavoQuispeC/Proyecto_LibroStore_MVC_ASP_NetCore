@@ -31,5 +31,9 @@ namespace AppStore.Models.Domain
          [NotMapped]
         public IEnumerable< SelectListItem>?CategoriaList { get; set; }
 
+        [NotMapped]
+        
+        public MultiSelectList? MultiCategoriasList {get;set;}
+
     }
 }

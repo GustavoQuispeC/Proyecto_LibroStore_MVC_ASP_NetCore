@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8Dsagjavruz5zwRCIPetDE7iB15c43JW92T7fFSLOMY=",
+  "Hash": "JvFbQaYmHo1HoMio5HykoEw3MxmTM02pWnzsDs6xS0w=",
   "Source": "AppStore",
   "BasePath": "_content/AppStore",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\34adaa1c-5ac2-45d8-932b-09dfd9a70616.jpeg",
+      "SourceId": "AppStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\",
+      "BasePath": "_content/AppStore",
+      "RelativePath": "Uploads/34adaa1c-5ac2-45d8-932b-09dfd9a70616.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\34adaa1c-5ac2-45d8-932b-09dfd9a70616.jpeg"
     },
     {
       "Identity": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\catedral.png",
