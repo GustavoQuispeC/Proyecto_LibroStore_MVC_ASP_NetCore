@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace AppStore.Models.Domain
 {
@@ -16,10 +17,19 @@ namespace AppStore.Models.Domain
         public virtual ICollection<Categoria>?CategoriaRelationList{get; set;}
         public virtual ICollection<LibroCategoria>?LibroCategoriaRelationList{get; set;}
         
-        [NotMapped] //!no se mapeara en las tablas de BD
+        //!no se mapeara en las tablas de la base de datos
+        [NotMapped] 
         public List<int>? Categorias { get; set; }
 
         [NotMapped]
         public string? CategoriasNames { get; set; }
+
+        [NotMapped]
+        public IFormFile? ImagenFile { get; set; }
+
+
+         [NotMapped]
+        public IEnumerable< MultiSelectList>?CategoriaList { get; set; }
+
     }
 }

@@ -9,10 +9,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//! agregando servicios de libros
+//! inyectando servicios de libros
 builder.Services.AddScoped<ILibroService, LibroService>();
-//! agregando servicios de autenticacion
+//! inyectando servicios de autenticacion
 builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
+//! inyectando servicios de categorias
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+//! inyectando servicios de Imagenes
+builder.Services.AddScoped<IFileService, FileService>();
 
 
 //! agregando conexion a la base de datos usando sqlite
@@ -23,6 +27,7 @@ builder.Services.AddDbContext<DatabaseContext>(opt =>
         LogLevel.Information).EnableSensitiveDataLogging();
         opt.UseSqlite(builder.Configuration.GetConnectionString("SqliteDataBase"));
 });
+
 //! agregando servicios de autenticacion y autorizacion
 builder.Services.AddIdentity<ApplicationUser,IdentityRole>()
 .AddEntityFrameworkStores<DatabaseContext>()
@@ -42,6 +47,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 //! Add the authentication and authorization middleware to the request pipeline.
 app.UseAuthentication();
 app.UseAuthorization();
@@ -49,6 +55,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+    
 //! preparando insercion de data por default
 using (var ambiente = app.Services.CreateScope())
 {
