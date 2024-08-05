@@ -1444,11 +1444,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\AppStore.csproj",
+      "projectUniqueName": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\AppStore.csproj",
       "projectName": "AppStore",
-      "projectPath": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\AppStore.csproj",
+      "projectPath": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\AppStore.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\obj\\",
+      "outputPath": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

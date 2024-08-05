@@ -1,0 +1,29 @@
+﻿@model AppStore.Models.Domain.Categoria
+@{
+    Layout = "_Layout";
+}
+
+
+<form class="w-40" asp-action="Add" method="post" enctype="multipart/form-data">
+<h2>Agregar Categoria</h2>
+
+    <div class="input-container">
+        <label asp-for="Nombre" class="w-40">Nombre</label>
+        <input type="text" class="input" asp-for="Nombre">
+    </div>
+    <div class="message-box pd-x-28 error">
+        <span asp-asp-validation-for="Descripcion"></span>
+    </div>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert-mb1">
+            @TempData["msg"]
+        </div>
+    }
+
+    <div class="input-container">
+        <button type="submit" class="btn btn-default">Guardar</button>
+        <a class="btn btn-sec" href="/Categoria/CategoriaList">Ver Todo</a>
+    </div>
+</form>

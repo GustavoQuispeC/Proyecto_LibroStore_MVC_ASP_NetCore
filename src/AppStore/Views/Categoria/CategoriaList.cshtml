@@ -1,0 +1,36 @@
+﻿@model AppStore.Models.DTO.CategoriaList
+@{
+    Layout = "_Layout";
+
+}
+<div class="tbl-container">
+    <h2>Administracion de Categorias</h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+>
+        </tr>
+        @foreach (var item in Model.CategoriaLista!)
+        {
+            <tr>
+                <td>@item.Nombre</td>
+               
+                <td>
+                    <a href="/Categoria/Edit?id=@item.Id" class="btn btn-default">
+                        <i class="fa fa-edit"></i>
+                    </a>
+
+                    <a href="/Categoria/Delete?id=@item.Id" onclick="return window.confirm('¿Esta seguro?')" class="btn btn-danger">
+                        <i class="fa fa-trash"></i>
+                    </a>
+
+                </td>
+            </tr>
+        }
+
+    </table>
+    <div class="input-container">
+        <a href="/categoria/add" class="btn btn-sec">Atras</a>
+
+    </div>
+</div>

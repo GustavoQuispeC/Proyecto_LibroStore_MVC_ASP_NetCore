@@ -1,47 +1,67 @@
 {
   "Files": [
     {
-      "Id": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\34adaa1c-5ac2-45d8-932b-09dfd9a70616.jpeg",
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\0af3826f-133e-4a67-b399-2f7fa9198713.png",
+      "PackagePath": "staticwebassets\\Uploads\\0af3826f-133e-4a67-b399-2f7fa9198713.png"
+    },
+    {
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\109fbae9-1eaa-4fcd-b6ca-4dca7d4907f7.png",
+      "PackagePath": "staticwebassets\\Uploads\\109fbae9-1eaa-4fcd-b6ca-4dca7d4907f7.png"
+    },
+    {
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\34adaa1c-5ac2-45d8-932b-09dfd9a70616.jpeg",
       "PackagePath": "staticwebassets\\Uploads\\34adaa1c-5ac2-45d8-932b-09dfd9a70616.jpeg"
     },
     {
-      "Id": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\catedral.png",
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\65846f24-e614-4460-b5c1-a91ef862228b.png",
+      "PackagePath": "staticwebassets\\Uploads\\65846f24-e614-4460-b5c1-a91ef862228b.png"
+    },
+    {
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\693611e7-f715-4b80-aa06-ebdd060e8df3.png",
+      "PackagePath": "staticwebassets\\Uploads\\693611e7-f715-4b80-aa06-ebdd060e8df3.png"
+    },
+    {
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\catedral.png",
       "PackagePath": "staticwebassets\\Uploads\\catedral.png"
     },
     {
-      "Id": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\cien.jpg",
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\cien.jpg",
       "PackagePath": "staticwebassets\\Uploads\\cien.jpg"
     },
     {
-      "Id": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\congo.jpg",
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\congo.jpg",
       "PackagePath": "staticwebassets\\Uploads\\congo.jpg"
     },
     {
-      "Id": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\guerra.jpg",
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\dcbe5382-f167-41cd-9d82-c2b5e9d7ff24.png",
+      "PackagePath": "staticwebassets\\Uploads\\dcbe5382-f167-41cd-9d82-c2b5e9d7ff24.png"
+    },
+    {
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\guerra.jpg",
       "PackagePath": "staticwebassets\\Uploads\\guerra.jpg"
     },
     {
-      "Id": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\harry.jpg",
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\harry.jpg",
       "PackagePath": "staticwebassets\\Uploads\\harry.jpg"
     },
     {
-      "Id": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\lazarillo.jpg",
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\lazarillo.jpg",
       "PackagePath": "staticwebassets\\Uploads\\lazarillo.jpg"
     },
     {
-      "Id": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\quijote.jpg",
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\quijote.jpg",
       "PackagePath": "staticwebassets\\Uploads\\quijote.jpg"
     },
     {
-      "Id": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\viajera.jpg",
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\Uploads\\viajera.jpg",
       "PackagePath": "staticwebassets\\Uploads\\viajera.jpg"
     },
     {
-      "Id": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\css\\forms.css",
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\css\\forms.css",
       "PackagePath": "staticwebassets\\css\\forms.css"
     },
     {
-      "Id": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\css\\style.css",
+      "Id": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {

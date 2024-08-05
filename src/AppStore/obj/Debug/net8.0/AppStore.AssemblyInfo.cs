@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c44c60093edf0d8613e443ee18ab766c444f8b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3629969c0d2ba65dca73c36187f7b19e92ee73bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "izzSgw2zyoKQJEJiNgXC3zs3dUmy2bb5VRP56bCDyHXU7nWDZ6SeIaN5r0UHpNW0jrhi5m2i6DeGWqdBwggI2A==",
+  "dgSpecHash": "Jh0ifYbjW8UTIKeJdUSCNLRHdBX3XKNkzJDctwhilJlfgbQ/Vc2p7rIsQ11DUx6WYz3GCGu7sbV/WVMr5aqLEA==",
   "success": true,
-  "projectFilePath": "D:\\Documentos\\CursosDiversos\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\AppStore.csproj",
+  "projectFilePath": "D:\\Documentos\\Curso .Net\\Proyecto_Libros_ASP_NetCore_MVC\\src\\AppStore\\AppStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.8\\microsoft.aspnetcore.cryptography.internal.7.0.8.nupkg.sha512",
